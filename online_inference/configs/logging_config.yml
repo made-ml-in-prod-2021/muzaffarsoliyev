@@ -1,0 +1,24 @@
+version: 1
+formatters:
+  simple:
+    class: logging.Formatter
+    format: "%(asctime)s %(levelname)s %(message)s"
+    datefmt: "%Y-%m-%d-%H:%M:%S"
+handlers:
+  file_handler:
+    class: logging.FileHandler
+    filename: logs/online_inference.log
+    level: DEBUG
+    formatter: simple
+  file_warning_handler:
+    class: logging.FileHandler
+    filename: logs/online_inference.warn
+    level: WARNING
+    formatter: simple
+loggers:
+  online_inference:
+    level: DEBUG
+    handlers: [file_handler]
+  online_inference_warning:
+    level: WARNING
+    handlers: [file_warning_handler]
