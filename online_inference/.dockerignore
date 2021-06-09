@@ -1,0 +1,15 @@
+.pytest_cache/
+logs/
+data/
+notebooks/
+src.egg-info/
+tests/
+.gitignore
+.env
+__init__.py
+LICENCE
+Makefile
+*.md
+test_environment.py
+*.ini
+.cache
