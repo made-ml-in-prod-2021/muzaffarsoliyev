@@ -1,0 +1,5 @@
+{
+  "variables_config": {
+    "model_path": "/opt/airflow/data/models/{{ ds }}/model.pkl"
+  }
+}
